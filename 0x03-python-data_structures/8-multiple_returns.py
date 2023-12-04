@@ -1,10 +1,9 @@
 #!/usr/bin/python3
+
 def multiple_returns(sentence):
-    wrdc = len(sentence)
-    first = sentence[0]
+    # Check if the sentence is empty
+    if not sentence:
+        return (0, None)
 
-    if wrdc <= 0:
-        first = None
-
-    length = (wrdc, first)
-    return length
+    # Return a tuple
+    return (len(sentence), sentence[0])
