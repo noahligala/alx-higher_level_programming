@@ -9,5 +9,4 @@ def lookup(obj);
     Returns:
     List: List of strings respresenting attributes and methods of the object.
     """
-    return [attr for attr in dir(obj) if not callable(getattr(obj, attr)) or not attr.startswith("__")]
-
+    return(dir (obj))
